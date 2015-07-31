@@ -1,0 +1,91 @@
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ultimate Mass Tagger</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/snoocore.min.js"></script>
+    <script type="text/javascript" src="js/umt.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/picnic.min.css">
+    <link type="text/css" rel="stylesheet" href="css/picnic.plugins.min.css">
+    <link type="text/css" rel="stylesheet" href="css/fontello.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+  </head>
+  
+  <body>
+    <nav>
+      <a href="/" class="brand">Ultimate Mass Tagger</a>
+      
+      <div class="menu">
+         <a href="https://github.com/ultimate-mass-tagger" target="_blank" class="pseudo button icon-github">Github</a>
+      </div>
+    </nav>
+    
+    <main>
+      <div class="modal">
+        <input id="auth-box" type="checkbox" />
+        <label for="auth-box-no" class="overlay"></label>
+        <article>
+          <header>
+            <h3>Oops!</h3>
+          </header>
+          <section class="message">
+            <p>You need to give access to this app through Reddit before using it. We promise it is safe!</p>
+            <p>Just follow the link, and you will be redirected to Reddit for authenticating.</p>
+          </section>
+          <footer>
+            <a class="button" id="auth-url" href="#">Authenticate</a>
+          </footer>
+        </article>
+      </div>
+      
+      <div class="modal">
+        <input id="loading-box" type="checkbox" />
+        <label for="loading-box-no" class="overlay"></label>
+        <article>
+          <header>
+            <div class="waiting">
+              <h3>Please wait a moment...</h3>
+            </div>
+          </header>
+          <section>
+            <div class="waiting">
+              <img src="img/hourglass.svg">
+            </div>
+          </section>
+        </article>
+      </div>
+      
+      <div class="app">
+        <div class="row">
+          <form>
+            
+          </form>
+        </div>
+        
+        <div class="row">
+          <table class="primary" id="summary">
+            <thead>
+              <tr>
+                <th>Who</th>
+                <th>Why</th>
+                <th>Color</th>
+                <th>Text</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="summary-content">
+              <!-- Fill here -->
+            </tbody>
+          </table>
+        </div>
+        
+        <div class="row">
+          <button id="do-it">TAG EVERYTHING</button>
+        </div>
+      </div>
+    </main>
+  </body>
+
+</html>

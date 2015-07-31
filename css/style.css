@@ -1,0 +1,22 @@
+main {
+    padding: 10px;
+    max-width: 960px;
+    width: 100%;
+    margin: 100px auto 500px;
+}
+
+table#summary {
+    display: none;
+}
+
+div.waiting {
+    text-align: center;
+}
+
+div.waiting h3 {
+    margin-right: 0px !important;
+}
+
+.app {
+    display: none;
+}
